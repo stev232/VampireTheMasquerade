@@ -1,31 +1,443 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vampire The Masquerade</title>
-    <link rel="stylesheet" href="./assets/styleSheet/standard.css">
-  </head>
-  <body>
-    <div class="body">
-      <div class="headerImage">
-        <img src="./assets/imgs/VampireTheMasquerade.png" />
-      </div>
-      <table class="character">
-        <tr class="character">
-          <td class="character"><label>Name:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Concept:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Predator:</label><input class="characterInputBox"></input></td>
+
+<head>
+  <title>Vampire The Masquerade</title>
+  <link rel="stylesheet" href="./assets/styleSheet/standard.css">
+  <link rel="shortcut icon" type="image/" href="./assets/imgs/VTM.png" />
+</head>
+
+<body>
+  <div class="body">
+    <div class="homePage">
+      <a href="./index.html">Home Page</a>
+    </div>
+    <div class="headerImage">
+      <img src="./assets/imgs/VampireTheMasquerade.png" />
+    </div>
+    <table class="character">
+      <tr class="character">
+        <td class="character"><label>Name:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Concept:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Predator:</label><input class="characterInputBox"></input></td>
+      </tr>
+      <tr class="character">
+        <td class="character"><label>Chronicle:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Ambition:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Clan:</label><input class="characterInputBox"></input></td>
+      </tr>
+      <tr class="character">
+        <td class="character"><label>Sire:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Desire:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Generation:</label><input class="characterInputBox"></input></td>
+      </tr>
+    </table>
+    <div class="attributes">
+      <h1>ATTRIBUTES</h1>
+      <hr class="horizontal" />
+      <table class="attributes">
+        <thead>
+          <tr class="attributes">
+            <th class="attributes">Physical</th>
+            <th class="attributes">Social</th>
+            <th class="attributes">Mental</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="attributes">
+            <td class="attributes">
+              <label>Strength</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox"></input>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Charisma</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Intelligence</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+          </tr>
+          <tr class="attributes">
+            <td class="attributes">
+              <label>Dexterity</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Manipulation</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Wits</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+          </tr>
+          <tr class="attributes">
+            <td class="attributes">
+              <label>Stamina</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Composure</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+            <td class="attributes">
+              <label>Resolve</label>
+              <div>
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+                <input class="characterSheetCheckBox" type="checkbox">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="skills">
+      <h1>SKILLS</h1>
+      <hr class="horizontal" />
+      <table class="skills">
+        <tr class="skills">
+          <td class="skills">
+            <label>Athletics</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Animal Ken</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Academics</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
         </tr>
-        <tr class="character">
-          <td class="character"><label>Chronicle:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Ambition:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Clan:</label><input class="characterInputBox"></input></td>
+        <tr class="skills">
+          <td class="skills">
+            <label>Brawl</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Etiquette</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Awareness</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
         </tr>
-        <tr class="character">
-          <td class="character"><label>Sire:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Desire:</label><input class="characterInputBox"></input></td>
-          <td class="character"><label>Generation:</label><input class="characterInputBox"></input></td>
+        <tr class="skills">
+          <td class="skills">
+            <label>Craft</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Insight</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Finance</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Drive</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Intimidation</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Investigation</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Firearms</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Leadership</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Medicine</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Melee</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Performance</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Occult</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Larceny</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Persuasion</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Politics</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Stealth</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Streetwise</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Science</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+        </tr>
+        <tr class="skills">
+          <td class="skills">
+            <label>Survival</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Subterfuge</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
+          <td class="skills">
+            <label>Technology</label>
+            <div>
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+              <input class="characterSheetCheckBox" type="checkbox">
+            </div>
+          </td>
         </tr>
       </table>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
