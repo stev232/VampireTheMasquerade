@@ -12,3 +12,23 @@ div.body {
   justify-content: center;
   width: 100%;
 }
+
+table.character {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.15em;
+  width: 50%;
+}
+
+tr.character {
+  padding: 0px;
+  margin: 0px;
+}
+
+td.character {
+  width: 30%;
+}
+
+input.characterInputBox {
+  width: 100%;
+}
