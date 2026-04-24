@@ -15,12 +15,53 @@ div.body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-size: 1em;
   justify-content: center;
   width: 100%;
 }
 
+div.characterStatsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+div.bloodValue {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+div.stats {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+div.health,
+div.humanity,
+div.willPower,
+div.hunger,
+div.resonance,
+div.bloodPotency {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 div.attributes,
-div.skills {
+div.skills,
+div.disciplines {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -46,7 +87,6 @@ td.character {
 
 table.attributes,
 table.skills {
-  font-size: 1.15em;
   width: 90%;
 }
 
@@ -103,5 +143,23 @@ input.characterSheetCheckBox:checked {
 }
 
 input.characterSheetCheckBox:active {
+  border: 2px solid #34495E;
+}
+
+input.characterStatsCheckbox {
+  height: 20px;
+  width: 20px;
+  appearance: none;
+  border: 1px solid #34495E;
+}
+
+input.characterStatsCheckbox:checked {
+  content: "";
+  color: red;
+  background: red;
+  box-shadow: red;
+}
+
+input.characterStatsCheckbox:active {
   border: 2px solid #34495E;
 }
