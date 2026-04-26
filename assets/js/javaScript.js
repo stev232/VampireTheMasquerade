@@ -22,13 +22,11 @@ async function checkboxAdjuster(elementClass, idNum) {
         $(`#${idList[1]}`).prop('checked', false);
     } else {
         for (let i = start; i > 0; i--) {
-            console.log(`reducer: ${i}`);
             $(`#${idList[i]}`).prop('checked', true);
         }
     }
     start = parseInt(idNum) + 1;
     for (let i = start; i < idList.length; i++) {
-        console.log(`incrementer: ${i}`);
         $(`#${idList[i]}`).prop('checked', false);
     }
 }
