@@ -66,7 +66,7 @@ div.disciplines {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 55%;
 }
 
 table.character {
@@ -101,7 +101,7 @@ tr.skills {
 th.attributes {
   font-size: 1.25em;
   text-align: center;
-  width: 30%;
+  width: 32%;
 }
 
 td.attributes,
@@ -109,7 +109,7 @@ td.skills {
   align-items: space-between;
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 32%;
 }
 
 input.characterInputBox {
