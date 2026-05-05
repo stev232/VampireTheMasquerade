@@ -10,6 +10,22 @@ const classList = {
     { class: "subterfuge", num: 5 }, { class: "technology", num: 5 }]
 };
 
+const clanList = {
+    fifthEdition:[
+        {clanName: "Banu Haqim"},{clanName: "Brujah"},{clanName: "Gangrel"},{clanName: "Hecata"},{clanName: "Lasombra"},{clanName: "Malkavian"},{clanName: "Ministry"},
+        {clanName: "Nosferatu"},{clanName: "Ravnos"},{clanName: "Salubri"},{clanName: "Toreador"},{clanName: "Tremere"},{clanName: "Tzimisce"},{clanName: "Ventrue"}
+    ]
+};
+
+const disciplinesList = {};
+const predatorTypes = {};
+
+const attributeDisbursement = { BestAttribute: {amount:1, val:4}, WorstAttribute: {amount:1, val:1}, GoodAttribute: {amount:3, val:3},OkAttributes: {amount:4, val:2}};
+const skillDisbursement = {
+    JackOfAllTrades:{FiveDotSkills: 0, FourDotSkills: 0, ThreeDotSkills: 1, TwoDotSkills: 8, OneDotSkills: 10},
+    Balanced:{FiveDotSkills: 0, FourDotSkills: 0, ThreeDotSkills: 3, TwoDotSkills: 5, OneDotSkills: 7},
+    Specialist:{FiveDotSkills: 0, FourDotSkills: 1, ThreeDotSkills: 3, TwoDotSkills: 3, OneDotSkills: 3}
+};
 
 async function checkboxAdjuster(elementClass, idNum) {
     let idList = new Array();
@@ -33,7 +49,7 @@ async function checkboxAdjuster(elementClass, idNum) {
 
 for (let i = 0; i < classList.data.length; i++) {
     $(`.${classList.data[i].class}`).on('click', function (event) {
-        event.stopImmediatePropagation();
+        event.stopImmediatePropagation(); //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
         let idNum = event.originalEvent.explicitOriginalTarget.id.substring(classList.data[i].class.length);
         checkboxAdjuster(classList.data[i].class, idNum);
     })
