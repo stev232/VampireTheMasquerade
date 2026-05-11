@@ -14,5 +14,5 @@ const classList = {
     ]
 };
 
-return classList;
-// export default classList;
+// return classList;
+export default classList;

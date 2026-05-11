@@ -3,28 +3,28 @@ let classList;
 
 
 // let mydata;
-// classList = require('./json/classList.json');
-// .then(response => response.json()) 
-// .then(jsonResponse => classList = jsonResponse)
+classList = require('./json/classList.json')
+.then(response => response.json()) 
+.then(jsonResponse => classList = jsonResponse);
 
-async function getJSONs() {
+// async function getJSONs() {
 
-    // , async function (data) {
+//     // , async function (data) {
 
-    $.getJSON("./classList.js", function (data) {
-        console.log(data);
-        // classList = data;
-    });
-    // classList = await fetch(`../json/classList.json`).json();
-    console.log(classList);
-    // });
-    // classList = await JSON.parse(`../json/classList.json`);
+//     $.getJSON("./classList.js", function (data) {
+//         console.log(data);
+//         // classList = data;
+//     });
+//     // classList = await fetch(`../json/classList.json`).json();
+//     // console.log(classList);
+//     // });
+//     // classList = await JSON.parse(`../json/classList.json`);
 
-}
+// }
 
-getJSONs();
+// getJSONs();
 
-// console.log(classList);
+console.log(classList);
 
 const clanList = {
     fifthEdition: [
