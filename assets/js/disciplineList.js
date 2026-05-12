@@ -1,4 +1,4 @@
-{
+const disciplineList = {
     "disciplines": [
         { "discipline": "Animalism", "abilities": [
             {"name": "Bond Famulus", "level": 1, "ruleSet": "Core"}, 
@@ -85,4 +85,4 @@
         { "discipline": "Protean" }, 
         { "discipline": "Thin-Blood Alchemy" }
     ]
-}
+};
