@@ -86,12 +86,14 @@ td.character {
 }
 
 table.attributes,
-table.skills {
+table.skills,
+table.disciplines {
   width: 90%;
 }
 
 tr.attributes,
-tr.skills {
+tr.skills,
+tr.disciplines {
   border-bottom: #AAAAAA 2px solid;
   display: flex;
   justify-content: space-evenly;
@@ -105,7 +107,8 @@ th.attributes {
 }
 
 td.attributes,
-td.skills {
+td.skills,
+td.disciplines {
   align-items: space-between;
   display: flex;
   justify-content: space-between;

@@ -40,6 +40,9 @@ const classList = {
         { "class": "science", "num": 5 }, 
         { "class": "survival", "num": 5 }, 
         { "class": "subterfuge", "num": 5 },
-        { "class": "technology", "num": 5 }
+        { "class": "technology", "num": 5 },
+        { "class": "disciplinesOne", "num": 5 },
+        { "class": "disciplinesTwo", "num": 5 },
+        { "class": "disciplinesThree", "num": 5 }
     ]
 };
