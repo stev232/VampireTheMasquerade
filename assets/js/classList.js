@@ -19,7 +19,7 @@ const classList = {
         { "class": "academics", "num": 5 }, 
         { "class": "brawl", "num": 5 }, 
         { "class": "etiquette", "num": 5 }, 
-        { "class": "awereness", "num": 5 },
+        { "class": "awareness", "num": 5 },
         { "class": "craft", "num": 5 }, 
         { "class": "insight", "num": 5 }, 
         { "class": "finance", "num": 5 }, 
