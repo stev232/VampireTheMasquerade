@@ -78,8 +78,42 @@ const disciplineList = {
             {"name": "Prowess From Pain", "level": 5, "ruleSet": "Core"}
 
         ] }, 
-        { "discipline": "Obfuscate" }, 
-        { "discipline": "Oblivion" }, 
+        { "discipline": "Obfuscate", "abilities": [
+            {"name": "Cloak Of Shadows", "level": 1, "ruleSet": "Core"},
+            {"name": "Silence Of Death", "level": 1, "ruleSet": "Core"},
+            {"name": "Chimerstry", "level": 2, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Unseen Passage", "level": 2, "ruleSet": "Core"},
+            {"name": "Fata Morgana", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Ghost In The Machine", "level": 3, "ruleSet": "Core"},
+            {"name": "Mental Maze", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Mind Masque", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Conceal", "level": 4, "ruleSet": "Core"},
+            {"name": "Vanish", "level": 4, "ruleSet": "Core"},
+            {"name": "Cloak The Gathering", "level": 5, "ruleSet": "Core"},
+            {"name": "Imposter's Guide", "level": 5, "ruleSet": "Core"}
+        ] }, 
+        { "discipline": "Oblivion", "abilities": [
+            {"name": "Ashes To Ashes", "level": 1, "ruleSet": "ChildrenOfCaine"},
+            {"name": "The Binding Fetter", "level": 1, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Oblivion's Sight", "level": 1, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Shadow Cloak", "level": 1, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Arm Of Ahriman", "level": 2, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Fatal Prediction", "level": 2, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Shadow Cast", "level": 2, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Where The Veil Thins", "level": 2, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Aura Of Decay", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Passion Feast", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Shadw Perspective", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Shadw Servant", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Touch Of Oblivion", "level": 3, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Necrotic Plague", "level": 4, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Stygian Shroud", "level": 4, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Shadow Step", "level": 5, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Skuld Fulfilled", "level": 5, "ruleSet": "ChildrenOfCaine"},
+            {"name": "Tenebrous Avatar", "level": 5, "ruleSet": "ChildrenOfCaine"}
+        ], "ceremonies": [
+            {"name": "The Gift Of False Life", "level": 1, "ruleSet": "ChildrenOfCaine"}
+    ] }, 
         { "discipline": "Potence" }, 
         { "discipline": "Presence" },
         { "discipline": "Protean" }, 
