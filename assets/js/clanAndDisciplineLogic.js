@@ -7,7 +7,6 @@ function setAvailableDisciplines(clan) {
   if (clan) {
     while (!found) {
       if (clan == clanList.fifthEdition[counter].clanName) {
-        // console.log(counter);
         $('#disciplineDropDownOne').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
         $('#disciplineDropDownTwo').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
         $('#disciplineDropDownThree').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
@@ -91,7 +90,6 @@ function setAvailableAbilities(discipline, columnNum) {
         }
       }
     }
-    console.log(discipline);
   }
 }
 
