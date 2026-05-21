@@ -6,34 +6,42 @@ function setAvailableDisciplines(clan) {
     while (!found) {
       if (clan == clanList.fifthEdition[counter].clanName) {
         // console.log(counter);
-        $('#disciplineDropDownOne').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`)
-        for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
-          $('#disciplineDropDownOne').append(
-            `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">${clanList.fifthEdition[counter].clanDisciplines[i].discipline}</option>`
-          )
-        }
-        $('#disciplineDropDownTwo').append(`<option class="disciplineOptions" selected value> -- select an option -- </option>`)
-        for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
-          $('#disciplineDropDownTwo').append(
-            `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">${clanList.fifthEdition[counter].clanDisciplines[i].discipline}</option>`
-          )
-        }
-        $('#disciplineDropDownThree').append(`<option class="disciplineOptions" selected value> -- select an option -- </option>`)
-        for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
-          $('#disciplineDropDownThree').append(
-            `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">${clanList.fifthEdition[counter].clanDisciplines[i].discipline}</option>`
-          )
-        }
+        $('#disciplineDropDownOne').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
+        $('#disciplineDropDownTwo').append(`<option class="disciplineOptions" selected value> -- select an option -- </option>`);
+        $('#disciplineDropDownThree').append(`<option class="disciplineOptions" selected value> -- select an option -- </option>`);
+        if (clanList.fifthEdition[counter].clanDisciplines[0].discipline != 'All') {
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownOne').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownTwo').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownThree').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i]}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
 
-        $('#disciplineDropDownOne').append(
-          `<option disabled class="disciplineOptions" value="">---------------</option>`
-        )
-        $('#disciplineDropDownTwo').append(
-          `<option disabled class="disciplineOptions" value="">---------------</option>`
-        )
-        $('#disciplineDropDownThree').append(
-          `<option disabled class="disciplineOptions" value="">---------------</option>`
-        )
+          $('#disciplineDropDownOne').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+          $('#disciplineDropDownTwo').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+          $('#disciplineDropDownThree').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+        }
 
         for (let x = 0; x < disciplineList.disciplines.length; x++) {
           let clanDiscipline = false;
