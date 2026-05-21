@@ -22,7 +22,7 @@ const clanList = {
         },
         {
             "clanName": "Caitiff",
-            "clanDisciplines": [{ "discipline": "" }],
+            "clanDisciplines": [{ "discipline": "All" }],
             "archetypeList": [{"archetype": ""}],
             "ruleSet": "Core"
         },
@@ -92,7 +92,7 @@ const clanList = {
         },
         {
             "clanName": "Thin Bloods",
-            "clanDisciplines": [{ "discipline": "" }],
+            "clanDisciplines": [{ "discipline": "Thin-Blood Alchemy" }],
             "archetypeList": [{"archetype": ""}],
             "ruleSet": "Core"
         },
