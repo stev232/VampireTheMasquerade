@@ -107,6 +107,7 @@ populateClanList();
 $('#clan').on("click", function () {
   //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
   event.stopImmediatePropagation();
+  $('.abilityOptions').remove();
   setAvailableDisciplines($('#clan')[0].value);
 })
 
