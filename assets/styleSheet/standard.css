@@ -172,3 +172,7 @@ input.characterStatsCheckbox:active {
 .marginLeftFifteenPixels {
   margin-left: 15px;
 }
+
+label[title]:hover:after {
+  background: pink !important; 
+}
