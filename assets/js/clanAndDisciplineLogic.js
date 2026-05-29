@@ -1,4 +1,4 @@
-const disciplineDropDowns = ["disciplineOne", "disciplineTwo", "disciplineThree"];
+const disciplineDropDowns = ["disciplineOne", "disciplineTwo", "disciplineThree", "disciplineFour", "disciplineFive", "disciplineSix"];
 
 function setAvailableDisciplines(clan) {
   $('.disciplineOptions').remove();
@@ -10,6 +10,9 @@ function setAvailableDisciplines(clan) {
         $('#disciplineDropDownOne').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
         $('#disciplineDropDownTwo').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
         $('#disciplineDropDownThree').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
+        $('#disciplineDropDownFour').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
+        $('#disciplineDropDownFive').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
+        $('#disciplineDropDownSix').append(`<option class="disciplineOptions" selected value=""> -- select an option -- </option>`);
         if (clanList.fifthEdition[counter].clanDisciplines[0].discipline != 'All') {
           for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
             $('#disciplineDropDownOne').append(
@@ -32,6 +35,27 @@ function setAvailableDisciplines(clan) {
               </option>`
             )
           }
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownFour').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i].discipline}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownFive').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i].discipline}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
+          for (let i = 0; i < clanList.fifthEdition[counter].clanDisciplines.length; i++) {
+            $('#disciplineDropDownSix').append(
+              `<option class="disciplineOptions" value="${clanList.fifthEdition[counter].clanDisciplines[i].discipline}">
+                ${clanList.fifthEdition[counter].clanDisciplines[i].discipline}
+              </option>`
+            )
+          }
 
           $('#disciplineDropDownOne').append(
             `<option disabled class="disciplineOptions" value="">---------------</option>`
@@ -40,6 +64,15 @@ function setAvailableDisciplines(clan) {
             `<option disabled class="disciplineOptions" value="">---------------</option>`
           );
           $('#disciplineDropDownThree').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+          $('#disciplineDropDownFour').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+          $('#disciplineDropDownFive').append(
+            `<option disabled class="disciplineOptions" value="">---------------</option>`
+          );
+          $('#disciplineDropDownSix').append(
             `<option disabled class="disciplineOptions" value="">---------------</option>`
           );
         }
@@ -59,6 +92,15 @@ function setAvailableDisciplines(clan) {
               `<option class="disciplineOptions" value="${disciplineList.disciplines[x].discipline}">${disciplineList.disciplines[x].discipline}</option>`
             )
             $('#disciplineDropDownThree').append(
+              `<option class="disciplineOptions" value="${disciplineList.disciplines[x].discipline}">${disciplineList.disciplines[x].discipline}</option>`
+            )
+            $('#disciplineDropDownFour').append(
+              `<option class="disciplineOptions" value="${disciplineList.disciplines[x].discipline}">${disciplineList.disciplines[x].discipline}</option>`
+            )
+            $('#disciplineDropDownFive').append(
+              `<option class="disciplineOptions" value="${disciplineList.disciplines[x].discipline}">${disciplineList.disciplines[x].discipline}</option>`
+            )
+            $('#disciplineDropDownSix').append(
               `<option class="disciplineOptions" value="${disciplineList.disciplines[x].discipline}">${disciplineList.disciplines[x].discipline}</option>`
             )
           }
@@ -128,4 +170,25 @@ $('#disciplineDropDownThree').on("click", function () {
   event.stopImmediatePropagation();
   $(`.${disciplineDropDowns[2]}`).children('.abilityOptions').remove();
   setAvailableAbilities($('#disciplineDropDownThree')[0].value, 2);
+})
+
+$('#disciplineDropDownFour').on("click", function () {
+  //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
+  event.stopImmediatePropagation();
+  $(`.${disciplineDropDowns[3]}`).children('.abilityOptions').remove();
+  setAvailableAbilities($('#disciplineDropDownFour')[0].value, 3);
+})
+
+$('#disciplineDropDownFive').on("click", function () {
+  //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
+  event.stopImmediatePropagation();
+  $(`.${disciplineDropDowns[4]}`).children('.abilityOptions').remove();
+  setAvailableAbilities($('#disciplineDropDownFive')[0].value, 4);
+})
+
+$('#disciplineDropDownSix').on("click", function () {
+  //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
+  event.stopImmediatePropagation();
+  $(`.${disciplineDropDowns[5]}`).children('.abilityOptions').remove();
+  setAvailableAbilities($('#disciplineDropDownSix')[0].value, 5);
 })

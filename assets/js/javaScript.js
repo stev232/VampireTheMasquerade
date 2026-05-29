@@ -32,7 +32,7 @@ async function checkboxAdjuster(elementClass, idNum) {
 }
 
 for (let i = 0; i < classList.data.length; i++) {
-    $(`.${classList.data[i].class}`).on('click', function (event) {
+    $(`.${classList.data[i].class}`).on("click", function (event) {
         //Stops all other listeners from being called. This was implimented because of actions occurring twice instead of only running once.
         event.stopImmediatePropagation();
         let idNum = event.originalEvent.explicitOriginalTarget.id.substring(classList.data[i].class.length);
