@@ -8,9 +8,12 @@
 </head>
 
 <body>
-  <div class="body">
+  <div class="characterSheetBody">
     <div class="homePage">
       <a href="./index.html">Home Page</a>
+    </div>
+    <div class="downloadButtonHolder">
+      <button id="downloadButton">Download Character Data</button>
     </div>
     <div class="headerImage">
       <img src="./assets/imgs/VampireTheMasquerade.png" />
@@ -47,7 +50,7 @@
       </div>
       <div class="stats">
         <div class="health">
-          <label>Health</label>
+          <label title="Stamina + 3">Health</label>
           <input class="characterStatsCheckbox health" id="health1" type="checkbox"></input>
           <input class="characterStatsCheckbox health" id="health2" type="checkbox"></input>
           <input class="characterStatsCheckbox health" id="health3" type="checkbox"></input>
@@ -79,7 +82,7 @@
         </div>
       </div>
       <div class="willPower">
-        <label>Will Power</label>
+        <label title="Composure + Resolve">Will Power</label>
         <input class="characterStatsCheckbox willPower" id="willPower1" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower2" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower3" type="checkbox"></input>
@@ -99,7 +102,7 @@
     </div>
     <table class="character">
       <tr class="character">
-        <td class="character"><label>Name:</label><input class="characterInputBox"></input></td>
+        <td class="character"><label>Name:</label><input class="characterInputBox" id="characterName"></input></td>
         <td class="character"><label>Concept:</label><input class="characterInputBox"></input></td>
         <td class="character"><label>Predator:</label><input class="characterInputBox"></input></td>
       </tr>
@@ -632,12 +635,14 @@
 
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
+  <script src="https://riversun.github.io/jsframe/jsframe.js"></script> //This github allows me to easily generate a toast in the html form
   <script src="./assets/js/clanList.js"></script>
   <script src="./assets/js/classList.js"></script>
   <script src="./assets/js/disciplineList.js"></script>
   <script src="./assets/js/predatorTypeList.js"></script>
   <script src="./assets/js/clanAndDisciplineLogic.js"></script>
   <script src="./assets/js/javaScript.js"></script>
+  <script src="./assets/js/jsonManager.js"></script>
 </body>
 
 </html>
