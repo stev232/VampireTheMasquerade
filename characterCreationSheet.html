@@ -93,7 +93,8 @@
         <input class="characterStatsCheckbox willPower" id="willPower8" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower9" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower10" type="checkbox"></input>
-        <input class="characterStatsCheckbox marginLeftFifteenPixels willPower" id="willPower11" type="checkbox"></input>
+        <input class="characterStatsCheckbox marginLeftFifteenPixels willPower" id="willPower11"
+          type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower12" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower13" type="checkbox"></input>
         <input class="characterStatsCheckbox willPower" id="willPower14" type="checkbox"></input>
@@ -731,13 +732,28 @@
           </td>
         </tr>
       </table>
+    </div>
+    <div class="characterDetails">
+      <h1>CHARACTER DETAILS</h1>
       <hr class="horizontal" />
+      <div class="characterDetailsContentHolder">
+        <div class="characterInformation">
+          <h2>Merits</h2>
+          <h2>Flaws</h2>
+        </div>
+        <div class="characterPortrait">
+          <h2 id="characterNameFromInput"></h2>
+          <div id="characterPortraitImage"></div>
+          <button id="imageUploadVTM">Click Here to Upload Image</button>
+        </div>
+      </div>
     </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
-  <script src="https://riversun.github.io/jsframe/jsframe.js"></script> //This github allows me to easily generate a toast in the html form
+  <script src="https://riversun.github.io/jsframe/jsframe.js"></script>
+  <!-- This github allows me to easily generate a toast in the html form -->
   <script src="./assets/js/clanList.js"></script>
   <script src="./assets/js/classList.js"></script>
   <script src="./assets/js/disciplineList.js"></script>

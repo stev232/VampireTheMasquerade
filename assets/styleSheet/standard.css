@@ -75,6 +75,20 @@ div.disciplines {
   width: 55%;
 }
 
+div.characterDetails {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+}
+
+div.characterDetailsContentHolder {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
 table.character {
   padding: 0px;
   margin: 0px;
@@ -165,7 +179,6 @@ input.characterStatsCheckbox {
 }
 
 input.characterStatsCheckbox:checked {
-  content: "";
   color: red;
   background: red;
   box-shadow: red;
@@ -181,4 +194,25 @@ input.characterStatsCheckbox:active {
 
 label[title]:hover:after {
   background: pink !important; 
+}
+
+div.characterInformation {
+  align-items: center;
+  align-self: left;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+div.characterPortrait {
+  align-items: center;
+  align-self: right;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+div.characterPortraitImage {
+  border: 2px black solid;
+  width: 100%;
 }

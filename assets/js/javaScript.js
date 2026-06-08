@@ -10,6 +10,14 @@ const skillDisbursement = {
     Specialist: { FiveDotSkills: 0, FourDotSkills: 1, ThreeDotSkills: 3, TwoDotSkills: 3, OneDotSkills: 3 }
 };
 
+$(document).ready(function () { //use this to check for values on reload/load
+    if ($(`#characterName`)[0].value) {
+        $(`#characterNameFromInput`).html($(`#characterName`)[0].value);
+    } else {
+        $(`#characterNameFromInput`).html("No Name Entered");
+    }
+});
+
 async function checkboxAdjuster(elementClass, idNum) {
     let idList = new Array();
     let start = parseInt(idNum);
@@ -39,3 +47,12 @@ for (let i = 0; i < classList.data.length; i++) {
         checkboxAdjuster(classList.data[i].class, idNum);
     })
 }
+
+$(`#characterName`).on("input", function (event) {
+    event.preventDefault(event);
+    if(event.currentTarget.value) {
+        $(`#characterNameFromInput`).html(event.currentTarget.value);
+    } else {
+        $(`#characterNameFromInput`).html("No Name Entered");
+    }
+})
