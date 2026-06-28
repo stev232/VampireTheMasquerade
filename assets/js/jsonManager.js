@@ -10,7 +10,7 @@ function jsonPackager(data) {
         borderRadius: '2px',
         backgroundColor: '#000000',
       },
-      html: '<span stlye="color: #DD0000; font-weight: bold;">&#42;</span>&nbsp;<span style="color: white;">Please add a character name!</span>', align: 'top', duration: 4000
+      html: '<img src="./assets/imgs/WoDStar.png" height="45" />&nbsp;<span style="color: white;">Please add a character name!</span>', align: 'top', duration: 4000
     });
   } else {
     jsFrame.showToast({
