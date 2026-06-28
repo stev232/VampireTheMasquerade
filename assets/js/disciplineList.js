@@ -47,7 +47,9 @@ const disciplineList = {
                 { "name": "Theft Of Vitae", "level": 4, "ruleSet": "Core" },
                 { "name": "Baal's Caress", "level": 5, "ruleSet": "Core" },
                 { "name": "Cauldron Of Blood", "level": 5, "ruleSet": "Core" }
-            ], "rituals": [
+            ] 
+        },
+        { "discipline": "Blood Sorcery Rituals", "abilities": [
                 { "name": "Blood Walk", "level": 1, "ruleSet": "Core" },
                 { "name": "Clining Of The Insect", "level": 1, "ruleSet": "Core" },
                 { "name": "Craft Bloodstone", "level": 1, "ruleSet": "Core" },
@@ -147,7 +149,10 @@ const disciplineList = {
                 { "name": "Shadow Step", "level": 5, "ruleSet": "PlayersGuide" },
                 { "name": "Skuld Fulfilled", "level": 5, "ruleSet": "PlayersGuide" },
                 { "name": "Tenebrous Avatar", "level": 5, "ruleSet": "PlayersGuide" }
-            ], "ceremonies": [
+            ] 
+        },
+            {
+                "discipline": "Oblivion Ceremonies", "abilities": [
                 { "name": "The Gift Of False Life", "level": 1, "ruleSet": "PlayersGuide" },
                 { "name": "Summon Spirit", "level": 1, "ruleSet": "PlayersGuide" },
                 { "name": "Awaken The Homuncular Servant", "level": 2, "ruleSet": "PlayersGuide" },
